@@ -2,7 +2,7 @@ import React from "react";
 import { allPosts } from "./posts";
 import { Group } from "@visx/group";
 import { Bar } from "@visx/shape";
-import { scaleLinear, scaleTime, scaleBand } from "@visx/scale";
+import { scaleLinear, scaleBand } from "@visx/scale";
 
 const CompOne = () => {
   //   const [posts, setPosts] = useState([]);
@@ -40,12 +40,9 @@ const CompOne = () => {
   );
   console.log(dataArr);
 
-  // We'll use some mock data from `@visx/mock-data` for this.
   const data = dataArr;
   //   const data = postObj;
 
-  // console.log(data);
-  // console.log(letterFrequency);
   // Define the graph dimensions and margins
   const width = 500;
   const height = 500;
